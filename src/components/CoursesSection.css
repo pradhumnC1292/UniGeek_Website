@@ -1,0 +1,96 @@
+.courses-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* Container styling for the whole section */
+.courses-section {
+  padding: 3rem 1rem;
+  max-width: 100vw;
+  border: 2px solid black;
+  margin: 0 auto;
+}
+
+/* Section heading styling */
+.section-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Layout container for the course cards */
+.courses-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* For medium/large screens, show cards side by side */
+@media (min-width: 768px) {
+  .courses-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Each course card */
+.course-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+/* Hover animation */
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Text side */
+.course-text {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+/* Title and description */
+.course-text h3 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+}
+
+.course-text p {
+  margin: 0;
+  color: #666;
+}
+
+/* Image side */
+.course-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* The image is made "pill-shaped" or partially rounded 
+   by adjusting border-radius in a container or the img itself */
+.course-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 1rem 1rem; /* round the bottom corners, for example */
+  object-fit: cover;
+}
+
+/* If you want a more pronounced "pill shape" for the entire card, 
+   you could adjust the .course-card's border-radius or the img's shape. 
+   For instance, a large radius to mimic the look from your screenshot. */

@@ -1,0 +1,16 @@
+/* Optionally add any global resets or styles here.
+   For example, a simple CSS reset or global body styles. */
+
+body {
+  margin: 0;
+  font-family: ;
+  background-color: #fff;
+  color: #000;
+}
+
+/* .app could have global padding or something if you want */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

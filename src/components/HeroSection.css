@@ -1,0 +1,78 @@
+.hero {
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+  border: 2px solid black;
+}
+
+/* Headline styles */
+.hero h1 {
+  font-size: 40px;
+  font-weight: 700; /* font-bold */
+  letter-spacing: -0.025em; /* tracking-tight */
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Slightly larger on medium screens (like md:text-5xl) */
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Purple text highlight */
+.purple-text {
+  color: #7e22ce; /* a purple shade */
+}
+
+/* Hero subtitle */
+.hero-subtitle {
+  margin-top: 1rem;
+  color: #666; /* text-gray-600ish */
+  max-width: 32rem; /* ~ max-w-xl */
+}
+
+/* Buttons container */
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Primary button (purple) */
+.primary-button {
+  background-color: #7e22ce;
+  color: #fff;
+  border-radius: 9999px;
+  padding: 8px 24px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.primary-button:hover {
+  background-color: #6b21a8; /* a bit darker purple */
+}
+
+/* Secondary button (outline style) */
+.secondary-button {
+  background-color: transparent;
+  color: #7e22ce;
+  border: 2px solid #7e22ce;
+  border-radius: 9999px;
+  padding: 8px 24px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.secondary-button:hover {
+  background-color: #f9f9fc; /* just a faint background change */
+}
